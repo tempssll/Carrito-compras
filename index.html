@@ -1,105 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet" type="text/css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
     <title>Carrito de compras</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-</head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
 
-<body>
+  </head>
+
+  
+  <body>
+    <!-- Añade un elemento div para mostrar el carrito -->
+    <!--   <img class="carrito" src="carrito-de-compras.png" alt="carrito" /> -->
+    <button class="btn-pedido" id="descargarPedido">Descargar Pedido </button><br><br>
+
+    <button class="whatsapp-button" id="compartirWhatsapp">
+        </i> Instrucciones para compartir
+    </button><br><br>
+    
+    <a class="whatsapp-link" href="https://wa.me/1234567890">
+        <i class="fab fa-whatsapp"></i> Enviar pedido 
+    </a><br><br>
+    
+
+    <div id="carrito" class="carrito">
+      <h2 class="pedido">Pedido : </h2>
+      <br /><br />
+      <ul id="carrito-list" class="carrito-list">
+        <!-- Los productos seleccionados se agregarán aquí -->
+      </ul>
+      
+    </div>
+    
+
     <header id="header">
-        <h1>Shopping Car</h1> 
-        <img class="carrito" src="img/carrito-de-compras.png" alt="carrito">
+      <h1>Computer Tech</h1>
     </header>
     <div id="contenedor" class="contenedor">
-        <div>
-            <img src="img/imagen1.webp" alt="producto 1">
-            <div class="informacion">
-                <p>Producto 1</p>
-                <p class="precio">$199<span>.99</span></p>
-                <button>Comprar</button>
-            </div>
+      <div>
+        <img src="  imagen1.webp" alt="producto 1" />
+        <div class="informacion">
+          <p>Computer Asus</p>
+          <p class="precio">$40.000<span></span></p>
+          <button
+            class="comprar"
+            data-producto="Producto 1"
+            data-producto-id="1"
+            data-precio="40000"
+          >
+            Comprar
+          </button>
         </div>
-        <div>
-            <img src="img/imagen2.webp" alt="producto 2">
-            <div class="informacion">
-                <p>Producto 2</p>                   
-                <p class="precio">$299<span>.99</span></p>
-                <button>Comprar</button>
-            </div>
+      </div>
+      <div>
+        <img src="imagen2.webp" alt="producto 2" />
+        <div class="informacion">
+          <p>Computer lenovo</p>
+          <p class="precio">$50.300<span></span></p>
+          <button
+            class="comprar"
+            data-producto="Producto 2"
+            data-precio="40000"
+          >
+            Comprar
+          </button>
         </div>
-        <div>
-            <img src="img/imagen3.webp" alt="producto 3">
-            <div class="informacion">
-                <p>Producto 3</p>                   
-                <p class="precio">$399<span>.99</span></p>
-                <button>Comprar</button>
-            </div>
+      </div>
+      <div>
+        <img src="imagen3.webp" alt="producto 3" />
+        <div class="informacion">
+          <p>Computer intel</p>
+          <p class="precio">$28.000<span></span></p>
+          <button
+            class="comprar"
+            data-producto="Producto 3"
+            data-precio="40000"
+          >
+            Comprar
+          </button>
         </div>
-        <div>
-            <img src="img/imagen4.webp" alt="producto 4">
-            <div class="informacion">
-                <p>Producto 4</p>                   
-                <p class="precio">$499<span>.99</span></p>
-                <button>Comprar</button>
-            </div>
+      </div>
+      <div>
+        <img src="imagen4.webp" alt="producto 4" />
+        <div class="informacion">
+          <p>Computer res</p>
+          <p class="precio">$90.000<span></span></p>
+          <button
+            class="comprar"
+            data-producto="Producto 4"
+            data-precio="40000"
+          >
+            Comprar
+          </button>
         </div>
-        <div>
-            <img src="img/imagen5.webp" alt="producto 5">
-            <div class="informacion">
-                <p>Producto 5</p>                   
-                <p class="precio">$599<span>.99</span></p>
-                <button>Comprar</button>
-            </div>
+      </div>
+      <div>
+        <img src="imagen5.webp" alt="producto 5" />
+        <div class="informacion">
+          <p>Computer be</p>
+          <p class="precio">$35.000<span></span></p>
+          <button
+            class="comprar"
+            data-producto="Producto 5"
+            data-precio="40000"
+          >
+            Comprar
+          </button>
         </div>
-        <div>
-            <img src="img/imagen6.webp" alt="producto 6">
-            <div class="informacion">
-                <p>Producto 6</p>                   
-                <p class="precio">$699<span>.99</span></p>
-                <button>Comprar</button>
-            </div>
-        </div>
-        <div>
-            <img src="img/imagen7.webp" alt="producto 7">
-            <div class="informacion">
-                <p>Producto 7</p>                   
-                <p class="precio">$799<span>.99</span></p>
-                <button>Comprar</button>
-            </div>
-        </div>
-        <div>
-            <img src="img/imagen8.webp" alt="producto 8">
-            <div class="informacion">
-                <p>Producto 8</p>                   
-                <p class="precio">$899<span>.99</span></p>
-                <button>Comprar</button>
-            </div>
-        </div>
-        <div>
-            <img src="img/imagen9.webp" alt="producto 9">
-            <div class="informacion">
-                <p>Producto 9</p>                   
-                <p class="precio">$999<span>.99</span></p>
-                <button>Comprar</button>
-            </div>
-        </div>
-    </div>
+      </div>
+      <div>
+        <img src="imagen6.webp" alt="producto 6" />
+        <div class="informacion">
+          <p>Computer aer</p>
+          <p class="precio">$20.000<span></span></p>
+          <button
+            class="comprar"
+            data-producto="Producto 6"
+            data-precio="40000"
+          >
+            Comprar
+          </button>
+        
+          <script src="app.js"></script>
+ 
 
-    <script src="app.js"></script>
 </body>
-
 </html>

@@ -1,98 +1,149 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
 }
+
+.pedido {
+  color: gold;
+  position: fixed;
+  font-size: 30px;
+}
+
+.carrito-list {
+  color: white;
+  position: fixed;
+}
+
+.btn-pedido {
+  position: fixed;
+  color: black;
+  background-color: blue;
+  font-size: 30px;
+}
+
+.whatsapp-button {
+  position: fixed;
+  background-color: green;
+  /*Cambiaelcolordefondoatuelección*/
+  color: white;
+  /*Cambiaelcolordeltextoatuelección*/
+  padding: 10px 20px;
+  /*Ajustaeltamañodelbotónsegúntusnecesidades*/
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.whatsapp-button i {
+  font-size: 20px; /* Ajusta el tamaño del ícono según tus necesidades */
+  margin-right: 5px; /* Agrega espacio entre el ícono y el texto */
+}
+
+/* Btn was 2  */
+.whatsapp-link {
+  position: fixed;
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none; /* Elimina el subrayado de enlaces */
+  display: inline-block; /* Para que se muestre como un botón */
+}
+
+.whatsapp-link i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
 body {
-    font-family: 'Space Grotesk', sans-serif;
-    background-color: #141C29;
-    padding-top: 80px;
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #141c29;
+  padding-top: 80px;
 }
-h1{
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    margin: 30px 0px;
+h1 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin: 30px 0px;
 }
 img {
-    width: 320px;
-    height: 340px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
+  width: 320px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
 }
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap:15%;
-    height: 70px;
-    top: 0;
-    position: fixed;
-    width: 100%;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15%;
+  height: 70px;
+  top: 0;
+  position: fixed;
+  width: 100%;
 }
-.scroll{
-    background-color: aliceblue;
-    box-shadow: .1rem .2rem .3rem #333;
+.scroll {
+  background-color: black;
+  box-shadow: 0.1rem 0.2rem 0.3rem white;
 }
-.scroll img{
-    filter: invert(15%);
-}           
-.scroll h1{
-    color: #141C29;
+.scroll img {
+  filter: invert(15%);
 }
-.carrito{
-    filter: invert(100%);
-    width: 45px;
-    height: auto;
-}
-.contenedor{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
-    margin-bottom: 20px;
-}
-.contenedor>div{
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    background-color: #2D4263;
-    border-radius: 20px;
-}
-.contenedor>div:hover{
-    background-color: #11294d;
+.scroll h1 {
+  color: #141c29;
 }
 
-.informacion{
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap:15px;
+.contenedor {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 20px;
 }
-.informacion>p:first-child{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
-    font-weight: 300;
+.contenedor > div {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: #2d4263;
+  border-radius: 20px;
+}
+.contenedor > div:hover {
+  background-color: #11294d;
+}
+
+.informacion {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.informacion > p:first-child {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 300;
 }
 .informacion .precio {
-    font-size: 20px;
-    font-weight: 500;
+  font-size: 20px;
+  font-weight: 500;
 }
-.informacion .precio span{
-    font-size: 17px;
-    font-weight: 300;
+.informacion .precio span {
+  font-size: 17px;
+  font-weight: 300;
 }
-.informacion button{
-    background-color: #263143;
-    width: 100px;
-    height: 35px;
-    border-radius: 10px;
-    border: none;
+.informacion button {
+  background-color: #263143;
+  width: 100px;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
 
-    font-size: 17px;
-    font-weight: 300;
-    cursor: pointer;
+  font-size: 17px;
+  font-weight: 300;
+  cursor: pointer;
 }
-.informacion button:hover{
-    background-color: #2D4263;
+.informacion button:hover {
+  background-color: #2d4263;
 }
